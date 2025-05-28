@@ -1,0 +1,40 @@
+<div class="container">
+  <h2>Registrar</h2>
+  <form (ngSubmit)="registrar()">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input
+        type="text"
+        id="nome"
+        [(ngModel)]="nome"
+        name="nome"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="email"
+        name="email"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="senha" class="form-label">Senha</label>
+      <input
+        type="password"
+        id="senha"
+        [(ngModel)]="senha"
+        name="senha"
+        class="form-control"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+  </form>
+  <div *ngIf="mensagem" class="alert alert-info mt-3">{{ mensagem }}</div>
+</div>

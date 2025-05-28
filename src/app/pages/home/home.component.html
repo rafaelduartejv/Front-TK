@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Bem-vindo!</h2>
+  <p>Escolha uma das opções abaixo:</p>
+
+  <div class="d-grid gap-3 mt-4">
+    <button class="btn btn-primary" (click)="irParaPerfil()">
+      Meu Perfil
+    </button>
+
+    <button class="btn btn-secondary" (click)="irParaEnderecos()">
+      Meus Endereços
+    </button>
+
+    <button
+      *ngIf="isAdmin"
+      class="btn btn-warning text-white"
+      (click)="irParaUsuarios()"
+    >
+      Gerenciar Usuários
+    </button>
+
+    <button class="btn btn-danger mt-3" (click)="logout()">
+      Sair
+    </button>
+  </div>
+</div>
