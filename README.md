@@ -1,4 +1,4 @@
-# Tokio Frontend (Português)
+# Tokio Frontend
 
 Este é o aplicativo frontend do sistema Tokio, construído com Angular. Ele fornece uma interface de usuário para autenticação (login e registro) e gerenciamento de endereços (operações CRUD). A aplicação interage com uma API backend, mas nem todas as funcionalidades do backend foram implementadas, limitando alguns recursos ao que atualmente é suportado pela API.
 
